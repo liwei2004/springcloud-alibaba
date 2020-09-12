@@ -29,6 +29,7 @@ public class OrderController2 {
         //调用商品微服务,查询商品信息
         Product product = productService.findByPid(pid);
 
+
         //模拟调用商品微服务需要2s的时间
         try {
             Thread.sleep(2000l);
